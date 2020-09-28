@@ -17,5 +17,5 @@ rmarkdown::render("cv.rmd",
                   output_file = tmp_html_cv_loc)
 
 # Convert to PDF using Pagedown
-pagedown::chrome_print(input = file_temp,
+pagedown::chrome_print(input =tmp_html_cv_loc,
                        output = "aaron_miles_cv.pdf")
